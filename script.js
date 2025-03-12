@@ -12,7 +12,7 @@ function sendMessage() {
   displayMessage(userMessage, "user");
   document.getElementById("user-input").value = "";
 
-  // Call AI API
+  // Call the Flask API to get the AI response
   fetchAIResponse(userMessage);
 }
 
@@ -26,8 +26,8 @@ function displayMessage(message, sender) {
 }
 
 function fetchAIResponse(userMessage) {
-  // Send user input to your server-side API that integrates with OpenAI
-  fetch('https://your-server.com/get-ai-response', {
+  // Send user input to your Python Flask backend API
+  fetch('http://localhost:5000/get-ai-response', {  // Update this URL if you're using a different host/port
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -36,7 +36,7 @@ function fetchAIResponse(userMessage) {
   })
   .then(response => response.json())
   .then(data => {
-    const aiMessage = data.response;
+    const aiMessage = data.response;  // The response object returned from Flask should have 'response' property
     displayMessage(aiMessage, "ai");
   })
   .catch(error => {
