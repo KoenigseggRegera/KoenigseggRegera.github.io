@@ -21,21 +21,17 @@
     </button>
     <div class="chatbot">
       <style>
-        body {
-    background-image: 
-        linear-gradient(#ffffff00, #000 100%), /* Shadow effect */
-        conic-gradient(
-            from 0deg, 
-            var(--background-dark-tile) 0deg, /* checker pattern */
-            var(--background-dark-tile) 90deg, 
-            var(--background-light-tile) 90deg, 
-            var(--background-light-tile) 180deg, 
-            var(--background-dark-tile) 180deg, 
-            var(--background-dark-tile) 270deg, 
-            var(--background-light-tile) 270deg, 
-            var(--background-light-tile) 360deg
-        );
-body {
+        :root{
+    --background-dark-tile: rgb(80, 80, 80);
+    --background-light-tile: rgb(50, 50, 50);
+    --background-size: 128px;
+}
+body{
+    background-image: linear-gradient(#ffffff00, #000 100%), /* shadow */ conic-gradient(from 0deg, var(--background-dark-tile) 0deg, /* second checker */ var(--background-dark-tile) 90deg, /* second checker */ var(--background-light-tile) 90deg, /* first checker */ var(--background-light-tile) 180deg, /* first checker */ var(--background-dark-tile) 180deg, /* second checker */ var(--background-dark-tile) 270deg, /* second checker */ var(--background-light-tile) 270deg, /* first checker */ var(--background-light-tile) 360deg /* first checker */);
+    background-size: cover, var(--background-size) var(--background-size);
+    background-attachment: fixed, local;
+    background-position: bottom;
+}
             font-family: sans-serif;
             margin: 0;
             padding: 0;
