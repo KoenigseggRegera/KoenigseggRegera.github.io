@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Custom ChatGPT AI</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    #chat-container { width: 500px; margin: 20px auto; padding: 20px; border: 1px solid #ddd; }
+    #messages { height: 300px; overflow-y: scroll; margin-bottom: 10px; padding: 10px; border-bottom: 1px solid #ddd; }
+    .message { padding: 8px; margin: 5px 0; border-radius: 5px; }
+    .user-message { background-color: #e1f5fe; text-align: right; }
+    .ai-message { background-color: #f1f1f1; text-align: left; }
+    input[type="text"] { width: calc(100% - 100px); padding: 10px; margin: 10px 0; }
+    button { padding: 10px 20px; background-color: #007BFF; color: white; border: none; border-radius: 5px; }
+  </style>
+</head>
+<body>
+
+<div id="chat-container">
+  <div id="messages"></div>
+  <input type="text" id="user-input" placeholder="Ask something..." />
+  <button onclick="sendMessage()">Send</button>
+</div>
+
+<script>
+  async function sendMessage() {
+    const userInput = document.getElementById('user-input').value;
+    if (!userInput) return;
+
+    const messagesContainer = document.getElementById('messages');
+
+    // Display user message
+    const userMessageDiv = document.createElement('div');
+    userMessageDiv.classList.add('message', 'user-message');
+    userMessageDiv.textContent = userInput;
+    messagesContainer.appendChild(userMessageDiv);
+
+    document.getElementById('user-input').value = ''; // Clear the input field
+
+    // Send the message to the backend server
+    const response = await fetch('http://localhost:3000/chat', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ message: userInput }),
+    });
+
+    const data = await response.json();
+
+    // Display AI's response
+    const aiMessageDiv = document.createElement('div');
+    aiMessageDiv.classList.add('message', 'ai-message');
+    aiMessageDiv.textContent = data.reply;
+    messagesContainer.appendChild(aiMessageDiv);
+
+    // Scroll to the bottom of the messages
+    messagesContainer.scrollTop = messagesContainer.scrollHeight;
+  }
+</script>
+
+</body>
+</html>
