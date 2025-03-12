@@ -50,11 +50,26 @@
             height: 400px; /* Adjust as needed */
             object-fit: cover;
         }
-        body {
-          margin: 0; /* Remove default body margins */
-          background-image: linear-gradient(90deg, darkgrey 25%, black 25%, darkgrey 50%, black 50%, darkgrey 75%, black 75%, darkgrey 100%);
-          background-size: 20px 20px; /* Adjust for square size */
-        }
+        
+body {
+    background-image: linear-gradient(#ffffff00, #000 100%), /* shadow */ conic-gradient(from 0deg, var(--background-dark-tile) 0deg, /* second checker */ var(--background-dark-tile) 90deg, /* second checker */ var(--background-light-tile) 90deg, /* first checker */ var(--background-light-tile) 180deg, /* first checker */ var(--background-dark-tile) 180deg, /* second checker */ var(--background-dark-tile) 270deg, /* second checker */ var(--background-light-tile) 270deg, /* first checker */ var(--background-light-tile) 360deg /* first checker */);
+    background-size: cover, var(--background-size) var(--background-size);
+    background-attachment: fixed, local;
+    background-position: bottom;
+    font-family: "Dusk Font B3", sans-serif;
+    font-size: 21px;
+    color: white;
+    margin: 0;
+    height: 100%;
+    image-rendering: pixelated;
+    margin-top: 47px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    scrollbar-color: rgb(45 45 45) rgb(28 28 28);
+    scrollbar-width: thin;  
+    overflow-x: hidden;
+}
     </style>
 </head>
 <body>
