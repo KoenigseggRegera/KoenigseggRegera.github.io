@@ -22,8 +22,19 @@
     <div class="chatbot">
       <style>
         body {
-  background: #333333;
-}
+    background-image: 
+        linear-gradient(#ffffff00, #000 100%), /* Shadow effect */
+        conic-gradient(
+            from 0deg, 
+            var(--background-dark-tile) 0deg, /* checker pattern */
+            var(--background-dark-tile) 90deg, 
+            var(--background-light-tile) 90deg, 
+            var(--background-light-tile) 180deg, 
+            var(--background-dark-tile) 180deg, 
+            var(--background-dark-tile) 270deg, 
+            var(--background-light-tile) 270deg, 
+            var(--background-light-tile) 360deg
+        );
 body {
             font-family: sans-serif;
             margin: 0;
