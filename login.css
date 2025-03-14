@@ -24,7 +24,7 @@ input {
     border: none;
     outline: none;
     color: white;
-    height: 20px;
+    height: 30px;
     width: 200px;
     box-sizing: border-box;
 }
@@ -34,7 +34,7 @@ button {
     color: white;
     border: none;
     width: 200px;
-    height: 20px;
+    height: 30px;
     border-radius: 5px;
     box-sizing: border-box;
 }
