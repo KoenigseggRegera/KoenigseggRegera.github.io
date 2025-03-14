@@ -12,6 +12,7 @@ form {
     background-color: gray;
     border-radius: 10px;
     width: 30%;
+    margin: 500;
 }
 input {
     background-color: black;
