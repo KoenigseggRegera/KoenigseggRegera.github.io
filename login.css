@@ -1,4 +1,5 @@
 body {
+    color: white;
     font-family: Arial;
     background-color: black;
     text-align: center;
@@ -6,9 +7,11 @@ body {
 form {
     background-color: gray;
     padding: 50px;
-    width: 30px;
     display: inline-block;
 }
 input {
     background-color: black;
+    border: none;
+    outline: none;
+    color: white;
 }
