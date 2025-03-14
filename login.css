@@ -1,15 +1,24 @@
 body {
+    background-color: black;
     color: white;
     font-family: Arial;
-    background-color: black;
-    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    height: 100vh;
+    margin: 0;
 }
+
 form {
+    border-radius: 10px;
     background-color: gray;
     padding: 50px;
+    width: auto;
     display: inline-block;
-     border-radius: 10px;
+    text-align: center;
 }
+
 input {
     background-color: black;
     border: none;
@@ -17,10 +26,10 @@ input {
     color: white;
     height: 20px;
     width: 200px;
-    border-radius: 5px;
     box-sizing: border-box;
 }
-button{
+
+button {
     background-color: blue;
     color: white;
     border: none;
