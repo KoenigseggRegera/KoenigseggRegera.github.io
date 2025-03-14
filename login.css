@@ -1,0 +1,14 @@
+body {
+    font-family: Arial;
+    background-color: black;
+    text-align: center;
+}
+form {
+    padding: 50px;
+    text-align: center;
+    color: white; 
+    background-color: gray;
+}
+input {
+    border-radius: 10px;
+}
