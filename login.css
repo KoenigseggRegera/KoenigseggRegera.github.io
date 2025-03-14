@@ -8,6 +8,7 @@ form {
     background-color: gray;
     padding: 50px;
     display: inline-block;
+     border-radius: 10px;
 }
 input {
     background-color: black;
