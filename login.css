@@ -2,17 +2,13 @@ body {
     font-family: Arial;
     background-color: black;
     text-align: center;
-     width:100%;
     overflow: hidden;
 }
 form {
-    padding: 50px;
-    text-align: center;
-    color: white; 
     background-color: gray;
-    border-radius: 10px;
-    width: 30%;
-    margin-left: 30%;
+    padding: 50px;
+    width: 30px;
+    display: inline-block;
 }
 input {
     background-color: black;
