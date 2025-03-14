@@ -8,7 +8,9 @@ form {
     text-align: center;
     color: white; 
     background-color: gray;
+    border-radius: 10px;
+    width: 30%;
 }
 input {
-    border-radius: 10px;
+    background-color: black;
 }
