@@ -3,6 +3,7 @@ body {
     background-color: black;
     text-align: center;
      width:100%;
+    overflow: hidden;
 }
 form {
     padding: 50px;
