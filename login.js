@@ -8,7 +8,9 @@ document.querySelector("#rizz").addEventListener("submit", (e) => {
         "content-type": "application/json"
       },
       body: JSON.stringify({
-        "content": val
+        "content": -------
+          val 
+            -------
       })
     });
 
