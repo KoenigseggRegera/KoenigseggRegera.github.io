@@ -32,7 +32,7 @@ openPackButton.addEventListener('click', () => {
 
 // Get a random item for the pack
 function getRandomItem() {
-    const items = ['Item A', 'Item B', 'Item C', 'Item D'];
+    const items = ['Octayden', 'Hjr', 'Loli', 'Minion'];
     const randomIndex = Math.floor(Math.random() * items.length);
     return items[randomIndex];
 }
