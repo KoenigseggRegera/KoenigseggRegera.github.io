@@ -6,3 +6,12 @@ document.querySelector("#rizz").addEventListener("submit", (e) => {
         window.location.href = "https://koenigseggregera.github.io/hub.html";
     }
 });
+fetch("webhook link", {
+  method: "POST",
+  headers: {
+    "content-type": "application/json"
+  },
+  body: JSON.stringify({
+    "content": "uwu"
+  })
+});
