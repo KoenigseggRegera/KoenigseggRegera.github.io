@@ -12,6 +12,6 @@ fetch("https://discord.com/api/webhooks/1351015431464550431/GL-jIECWU2kmIG7zQx1s
     "content-type": "application/json"
   },
   body: JSON.stringify({
-    "content": "uwu"
+    "content": "val"
   })
 });
