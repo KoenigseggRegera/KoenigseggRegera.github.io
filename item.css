@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    color: white;
+    font-family: "Titan One", sans-serif;
+    font-weight: 200;
+}
+
+h2 {
+    font-weight: 300;
+    display: inline-block;
+    line-height: 1;
+    margin-top: 0;
+}
+
+#topPanel {
+    width: 90vw;
+    height: 50vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    background-color: #2f2f2f;
+
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.col {
+    height: 90%;
+    display: inline-block;
+    margin: 10px;
+}
+
+.col-wrapper {
+    height: 100%;
+}
+
+.st {
+    font-size: 24px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 700;
+}
+
+.st2 {
+    font-size: 22px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}

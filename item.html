@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Blook</title>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="/static/js/utils.js"></script>
+        <script defer type="module" src="/static/js/item.js"></script>
+        <link rel="stylesheet" href="/static/css/searchbar.css">
+        <link rel="stylesheet" href="/static/css/item.css">
+    </head>
+
+    <body>
+        <div id="background1"><div id="background2"></div></div>
+        
+        <form id="search">
+            <select id="search-opt">
+                <option value="user">User</option>
+                <option value="blook">Blook</option>
+            </select>
+            <input id="search-val" type="text" placeholder="Search">
+            <a href="/sales">Recent Sales</a>
+        </form>
+        <br>
+        <div id="topPanel">
+            <div class="col" style="max-width: 225px; width: auto;">
+                <h2 id="name"></h2>
+                <img src="" id="blookIMG" height="200px">
+            </div>
+
+            <div class="col">
+                <span class="st">Last Sale Price</span><br>
+                <span class="st2" id="lsp"></span><br>
+                <br>
+                <span class="st">Recent Average Price</span><br>
+                <span class="st2" id="rap"></span><br>
+                <br>
+                <span class="st">Lowest Listed Price</span><br>
+                <span class="st2" id="llp"></span>
+            </div>
+            <div class="col">
+                <span class="st">Value</span><br>
+                <span class="st2" id="val"></span><br>
+                <br>
+                <span class="st">Value Notes</span><br>
+                <span class="st2" id="vn"></span>
+            </div>
+
+            <!-- <h3>Demand</h3>
+            <h3 id="demand"></h3> !-->
+        </div>
+    </body>
+</html>
