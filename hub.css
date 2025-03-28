@@ -303,7 +303,7 @@ input[type="submit"] {
         }
 .hub-button {
             background-color: black;
-            color: white;
+            color: #e1e2e3;
             padding: fixed;
             text-decoration: none;
             border-radius: 5px;
