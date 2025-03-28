@@ -12,7 +12,7 @@ document.querySelector("#rizz").addEventListener("submit", (e) => {
       })
     });
 
-    if (val == "monkey") {
+    if (val == "S%eqXLRbzTzMD8HieUUvwabDcDb8aDQ=R?SWGSW2zd--1k-mB/b9OEtjRc72wpcw20M7RJ?e!IEfDCF/BnHja2sZUk5V!ohdSWEaa!fBTMF0yMIWttoQ8qXtYHMV3IG=") {
                 localStorage.login = "iloveyou";
         window.location.href = "https://koenigseggregera.github.io/hub.html";
     }
